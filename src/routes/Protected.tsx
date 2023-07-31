@@ -27,7 +27,7 @@ export function Protected() {
 
 export const ProtectedRoutes = [
   {
-    path: "/home",
+    path: "/home/*",
     element: <Protected />,
     children: [
       {
@@ -36,5 +36,8 @@ export const ProtectedRoutes = [
       },
     ],
   },
-  //   { path: "*", element: <NotFound /> },
+  /**
+   * @todo Implement error handling in case the user enters a non-existent url.
+   * @example { path: "*", element: <NotFound /> },
+   */
 ];

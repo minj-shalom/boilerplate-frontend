@@ -20,7 +20,7 @@ export function Public() {
 
 export const PublicRoutes = [
   {
-    path: "/auth",
+    path: "/auth/*",
     element: <Public />,
     children: [
       {
